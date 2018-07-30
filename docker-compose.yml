@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  server:
+    build: .
+    ports:
+      - 443:443/tcp
+      - 992:992/tcp
+      - 1194:1194/tcp
+      - 5555:5555/tcp
+      - 50:50/udp
+      - 500:500/udp
+      - 4500:4500/udp
+    volumes:
+      - ./vpnserver/vpn_server.config:/vpnserver/vpn_server.config:ro
+    restart: always
