@@ -1,5 +1,9 @@
 # SoftEtherVPN Server On Docker
 
+## requied
+- docker <confirmed version 18.03.1-ce>
+- docker-compose <confirmed version 1.21.2>
+
 ## Install
 
 - clone this repository.  
