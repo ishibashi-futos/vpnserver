@@ -1,0 +1,13 @@
+name: Test build image.
+
+on: push
+
+jobs:
+  build-image:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+    
+    - name: build image
+    run: |
+      build -t softether_server:v4.3.4 .
