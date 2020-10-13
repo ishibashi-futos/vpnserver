@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v1
       - name: build image
         run: |
-          build -t softether_server:v4.3.4 .
+          docker build -t softether_server:v4.3.4 .
